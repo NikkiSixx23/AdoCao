@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643510642964",
+    "project_id": "adocao-8211f",
+    "storage_bucket": "adocao-8211f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643510642964:android:415f7f71c98cb406a6ba01",
+        "android_client_info": {
+          "package_name": "com.example.adocao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmQSRSf4v84eoRbKGwDlWLoB7rPdMJ_Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
