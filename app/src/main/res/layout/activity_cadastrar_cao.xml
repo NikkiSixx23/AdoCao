@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/nomeCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -155,7 +155,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout26">
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/corCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -195,7 +195,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout28">
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/porteCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -235,7 +235,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout30">
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/sexoCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -275,7 +275,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout32">
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/racaCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -337,7 +337,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout46">
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/historicoCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

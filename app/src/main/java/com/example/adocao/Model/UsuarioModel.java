@@ -1,6 +1,5 @@
 package com.example.adocao.Model;
 
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -14,7 +13,6 @@ public class UsuarioModel {
 
 
     public UsuarioModel(){
-
     }
 
     public UsuarioModel(String nome, String email, String cidade, String UF, String contato) {
@@ -65,7 +63,7 @@ public class UsuarioModel {
         this.contato = contato;
     }
 
-    public  void salvar(){
+    public void salvar(){
         FirebaseAuth auth = FirebaseAuth.getInstance();
         String userId = auth.getCurrentUser().getUid();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("usuarios");

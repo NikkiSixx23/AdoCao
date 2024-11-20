@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Adocao"
 include(":app")
+
+

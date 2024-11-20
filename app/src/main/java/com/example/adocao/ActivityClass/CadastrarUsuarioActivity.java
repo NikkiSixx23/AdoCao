@@ -10,13 +10,13 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.adocao.Model.MaskWatcher;
 import com.example.adocao.Model.UsuarioModel;
 import com.example.adocao.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class CadastrarUsuarioActivity extends AppCompatActivity {
 
@@ -35,6 +35,7 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_cadastrar_usuario);
 
+
         mAuth = FirebaseAuth.getInstance();
 
         nomeRegister = findViewById(R.id.nome);
@@ -44,6 +45,8 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         contatoRegister = findViewById(R.id.contato);
         senhaRegister = findViewById(R.id.senha);
         btCadastrarUsuario = findViewById(R.id.btCadastrarUsuario);
+
+        contatoRegister.addTextChangedListener(new MaskWatcher("(##) #####-####"));
 
         btCadastrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +85,4 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
-
 }
