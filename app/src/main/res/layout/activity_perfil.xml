@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerfilActivity">
+    tools:context=".ActivityClass.PerfilActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout9"
@@ -141,11 +141,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/nomeUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Luciana Cagliari Yoo" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -181,11 +179,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/emailUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="luciana@adocao.com" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -221,11 +217,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/cidadeUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Botucatu" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -261,10 +255,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout19">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/UFUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SP" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -300,11 +293,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/contatoUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="(14) 98121-7362" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
