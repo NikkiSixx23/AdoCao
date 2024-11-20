@@ -6,15 +6,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.adocao.Model.UsuarioModel;
 import com.example.adocao.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 public class PerfilActivity extends AppCompatActivity {
 
@@ -25,8 +30,8 @@ public class PerfilActivity extends AppCompatActivity {
     private TextView cidadeUsuario;
     private TextView UFUsuario;
     private TextView contatoUsuario;
-    FirebaseFirestore bdAdocao = FirebaseFirestore.getInstance();
-    String usuarioID;
+    private DatabaseReference databaseReference;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +39,11 @@ public class PerfilActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_perfil);
 
+        mAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("usuarios");
+
         IniciarComponentes();
+        carregarDadosUsuario();
 
         btSair.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,14 +63,36 @@ public class PerfilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+    private void carregarDadosUsuario() {
+        String userId = mAuth.getCurrentUser().getUid();
 
-        usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        
+        databaseReference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+
+                    UsuarioModel usuarioModel = snapshot.getValue(UsuarioModel.class);
+
+                    if (usuarioModel != null) {
+                        nomeUsuario.setText(usuarioModel.getNome());
+                        emailUsuario.setText(usuarioModel.getEmail());
+                        cidadeUsuario.setText(usuarioModel.getCidade());
+                        UFUsuario.setText(usuarioModel.getUF());
+                        contatoUsuario.setText(usuarioModel.getContato());
+                    }
+                } else {
+                    Toast.makeText(PerfilActivity.this, "Dados do usuário não encontrados!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(PerfilActivity.this, "Erro ao carregar os dados.", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void IniciarComponentes(){

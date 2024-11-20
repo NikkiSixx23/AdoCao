@@ -1,7 +1,7 @@
 package com.example.adocao.Model;
 
-import androidx.annotation.NonNull;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -66,8 +66,10 @@ public class UsuarioModel {
     }
 
     public  void salvar(){
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("usuarios").child(getNome()).setValue(this);
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        String userId = auth.getCurrentUser().getUid();
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("usuarios");
+        reference.child(userId).setValue(this);
     }
 }
 
