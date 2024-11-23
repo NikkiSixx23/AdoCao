@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityClass.CaoActivity">
+    tools:context=".ActivityClass.AdotadoActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout34"
+        android:id="@+id/linearLayout70"
         android:layout_width="340dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="118dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="55dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,49 +20,49 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/montserrat_alternates"
-            android:text="AUmigo"
+            android:text="Informações Finais"
             android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout65"
+        android:id="@+id/linearLayout71"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="161dp"
+        android:layout_marginEnd="120dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout34">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout70">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/swen" />
+            android:src="@mipmap/swen" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout35"
+        android:id="@+id/linearLayout72"
         android:layout_width="133dp"
-        android:layout_height="19dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="262dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout65">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout71">
 
         <TextView
-            android:id="@+id/textView44"
+            android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_alternates"
@@ -71,7 +71,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout36"
+        android:id="@+id/linearLayout73"
         android:layout_width="380dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
@@ -79,38 +79,61 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout35">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout72">
 
         <TextView
-            android:id="@+id/nomeCaoAumigo"
+            android:id="@+id/nomeCaoFinal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates" />
+            android:fontFamily="@font/montserrat_alternates"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout37"
+        android:id="@+id/linearLayout74"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="55dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout73">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_alternates"
+            android:text="Contato"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout75"
         android:layout_width="133dp"
-        android:layout_height="19dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="262dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout36">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout74">
 
         <TextView
-            android:id="@+id/textView46"
+            android:id="@+id/textView33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_alternates"
-            android:text="Cor"
+            android:text="Responsável"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout38"
+        android:id="@+id/linearLayout76"
         android:layout_width="380dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
@@ -118,17 +141,18 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout37">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout75">
 
         <TextView
-            android:id="@+id/corCaoAumigo"
+            android:id="@+id/responsavel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates" />
+            android:fontFamily="@font/montserrat_alternates"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout39"
+        android:id="@+id/linearLayout77"
         android:layout_width="133dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
@@ -137,58 +161,18 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout38">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout76">
 
         <TextView
-            android:id="@+id/textView48"
+            android:id="@+id/textView38"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_alternates"
-            android:text="Porte"
+            android:text="Contato"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout40"
-        android:layout_width="380dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout39">
-
-        <TextView
-            android:id="@+id/porteCaoAumigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout41"
-        android:layout_width="133dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="262dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout40">
-
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Sexo"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout42"
         android:layout_width="380dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
@@ -196,73 +180,14 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout41">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout77">
 
         <TextView
-            android:id="@+id/sexoCaoAumigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout43"
-        android:layout_width="133dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="262dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout42">
-
-        <TextView
-            android:id="@+id/textView52"
+            android:id="@+id/contatoFinal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_alternates"
-            android:text="Raça"
-            android:textStyle="bold" />
+            android:textSize="15dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout44"
-        android:layout_width="380dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout43">
-
-        <TextView
-            android:id="@+id/racaCaoAumigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="125dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout44">
-
-        <Button
-            android:id="@+id/btHistoricoCao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#CDC1FF"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Histórico"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

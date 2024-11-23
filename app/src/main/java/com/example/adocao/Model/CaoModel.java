@@ -75,9 +75,9 @@ public class CaoModel {
 
     public void salvar(){
         FirebaseAuth auth = FirebaseAuth.getInstance();
-        String userId = auth.getCurrentUser().getUid();
+        String userIdCao = auth.getCurrentUser().getUid();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("caes");
-        reference.child(userId).setValue(this);
+        reference.child(userIdCao).setValue(this);
     }
 }
 
