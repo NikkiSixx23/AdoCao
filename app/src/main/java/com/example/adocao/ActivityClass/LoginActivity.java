@@ -26,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText senha;
     private Button btEntrar;
     private Button btCadastro;
-    private ProgressBar loginProgressBar;
     private FirebaseAuth mAuth;
 
     @SuppressLint("MissingInflatedId")

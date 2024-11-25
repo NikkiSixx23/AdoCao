@@ -81,7 +81,7 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal() {
-        Intent intent = new Intent(CadastrarUsuarioActivity.this, AdocaoActivity.class);
+        Intent intent = new Intent(CadastrarUsuarioActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

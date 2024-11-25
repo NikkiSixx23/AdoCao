@@ -125,6 +125,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCao"
         android:layout_width="369dp"
         android:layout_height="653dp"
         android:layout_marginStart="20dp"
