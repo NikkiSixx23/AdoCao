@@ -2,6 +2,7 @@ package com.example.adocao.ActivityClass;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.adocao.Model.MaskWatcher;
+import com.example.adocao.Model.MaskTelefone;
 import com.example.adocao.Model.UsuarioModel;
 import com.example.adocao.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -46,7 +47,10 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         senhaRegister = findViewById(R.id.senha);
         btCadastrarUsuario = findViewById(R.id.btCadastrarUsuario);
 
-        contatoRegister.addTextChangedListener(new MaskWatcher("(##) #####-####"));
+        UFRegister.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+
+        contatoRegister.addTextChangedListener(new MaskTelefone("(##) #####-####"));
+
 
         btCadastrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override

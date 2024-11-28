@@ -2,6 +2,7 @@ package com.example.adocao.ActivityClass;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,8 @@ public class CadastrarCaoActivity extends AppCompatActivity {
         racaCaoRegister = findViewById(R.id.racaCaoRegister);
         historicoCaoRigister = findViewById(R.id.historicoCaoRegister);
         btCadastrarCao = findViewById(R.id.btCadastrarCao);
+
+        racaCaoRegister.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
 
         btCadastrarCao.setOnClickListener(new View.OnClickListener() {
             @Override

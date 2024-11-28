@@ -68,24 +68,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="51dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="110dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout45"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/btAUmigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout67"
         android:layout_width="55dp"
         android:layout_height="20dp"

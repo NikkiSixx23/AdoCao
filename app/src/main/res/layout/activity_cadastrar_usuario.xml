@@ -64,7 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="Ex: João Silva"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,6 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ex: joao@adocao.com"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
@@ -145,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ex: No mínimo 6 caracteres"
             android:inputType="textPassword" />
     </LinearLayout>
 
@@ -185,7 +188,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: São Paulo"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -225,8 +229,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ex: SP"
             android:inputType="text"
-            android:textAllCaps="true"/>
+            android:maxLength="2" />
     </LinearLayout>
 
     <LinearLayout
@@ -266,6 +271,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ex: (11) 91111-2222"
             android:inputType="phone" />
     </LinearLayout>
 

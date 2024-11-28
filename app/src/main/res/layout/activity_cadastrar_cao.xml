@@ -140,7 +140,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Totó"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -159,7 +160,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Caramelo, Preto, Branco"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -199,7 +201,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Pequeno, Médio, Grande"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -239,7 +242,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Macho ou Fêmea"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -279,7 +283,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: SRD"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -341,6 +346,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Todas as Informações do Cão"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

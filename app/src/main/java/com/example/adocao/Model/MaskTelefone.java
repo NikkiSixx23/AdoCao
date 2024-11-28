@@ -3,11 +3,11 @@ package com.example.adocao.Model;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-public class MaskWatcher implements TextWatcher {
+public class MaskTelefone implements TextWatcher {
     private final String mask;
     private boolean isUpdating;
 
-    public MaskWatcher(String mask) {
+    public MaskTelefone(String mask) {
         this.mask = mask;
     }
 
