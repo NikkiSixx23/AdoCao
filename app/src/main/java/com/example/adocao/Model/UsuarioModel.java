@@ -23,6 +23,7 @@ public class UsuarioModel {
         this.contato = contato;
     }
 
+
     public String getNome() {
         return nome;
     }
@@ -62,6 +63,8 @@ public class UsuarioModel {
     public void setContato(String contato) {
         this.contato = contato;
     }
+
+
 
     public void salvar(){
         FirebaseAuth auth = FirebaseAuth.getInstance();

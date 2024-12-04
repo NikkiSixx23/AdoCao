@@ -43,10 +43,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout34">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/swen" />
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
     </LinearLayout>
 
     <LinearLayout

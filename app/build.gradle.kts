@@ -33,6 +33,8 @@ android {
 }
 
 dependencies {
+    implementation (libs.material.v190)
+    implementation (libs.activity.v120)
     implementation (libs.recyclerview)
     implementation(libs.appcompat)
     implementation(libs.material)
