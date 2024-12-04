@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HistoricoActivity">
+    tools:context=".ActivityClass.HistoricoActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout63"
@@ -52,6 +52,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout69"
         android:layout_width="375dp"
         android:layout_height="340dp"
         android:layout_marginStart="18dp"
@@ -63,10 +64,31 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout64">
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/descricaoHistorico"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="TextView" />
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="126dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout69">
+
+        <Button
+            android:id="@+id/btAdocao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDC1FF"
+            android:fontFamily="@font/montserrat_alternates"
+            android:text="Quero Adotar!"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

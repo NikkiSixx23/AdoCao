@@ -13,28 +13,34 @@
         android:theme="@style/Theme.Adocao"
         tools:targetApi="31">
         <activity
-            android:name=".CadastrarUsuarioActivity"
+            android:name=".ActivityClass.recycleCaoActivity"
             android:exported="false" />
         <activity
-            android:name=".HistoricoActivity"
+            android:name=".ActivityClass.AdotadoActivity"
             android:exported="false" />
         <activity
-            android:name=".CaoActivity"
+            android:name=".ActivityClass.CadastrarUsuarioActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastrarCaoActivity"
+            android:name=".ActivityClass.HistoricoActivity"
             android:exported="false" />
         <activity
-            android:name=".PerfilActivity"
+            android:name=".ActivityClass.CaoActivity"
             android:exported="false" />
         <activity
-            android:name=".AdocaoActivity"
+            android:name=".ActivityClass.CadastrarCaoActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ActivityClass.PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityClass.AdocaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityClass.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityClass.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

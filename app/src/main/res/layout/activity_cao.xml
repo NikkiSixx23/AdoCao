@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CaoActivity">
+    tools:context=".ActivityClass.CaoActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout34"
@@ -32,8 +32,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout65"
-        android:layout_width="168dp"
-        android:layout_height="154dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="161dp"
@@ -43,10 +43,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout34">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/swen" />
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,11 +82,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout35">
 
         <TextView
-            android:id="@+id/textView45"
+            android:id="@+id/nomeCaoAumigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Swen" />
+            android:fontFamily="@font/montserrat_alternates" />
     </LinearLayout>
 
     <LinearLayout
@@ -122,11 +121,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout37">
 
         <TextView
-            android:id="@+id/textView47"
+            android:id="@+id/corCaoAumigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Cremoso" />
+            android:fontFamily="@font/montserrat_alternates" />
     </LinearLayout>
 
     <LinearLayout
@@ -162,11 +160,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout39">
 
         <TextView
-            android:id="@+id/textView49"
+            android:id="@+id/porteCaoAumigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Grande" />
+            android:fontFamily="@font/montserrat_alternates" />
     </LinearLayout>
 
     <LinearLayout
@@ -202,11 +199,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout41">
 
         <TextView
-            android:id="@+id/textView51"
+            android:id="@+id/sexoCaoAumigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Macho" />
+            android:fontFamily="@font/montserrat_alternates" />
     </LinearLayout>
 
     <LinearLayout
@@ -242,16 +238,15 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout43">
 
         <TextView
-            android:id="@+id/textView53"
+            android:id="@+id/racaCaoAumigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates"
-            android:text="Golden Retriever" />
+            android:fontFamily="@font/montserrat_alternates" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="161dp"
-        android:layout_height="58dp"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
         android:layout_marginStart="125dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="125dp"
@@ -261,12 +256,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout44">
 
         <Button
-            android:id="@+id/btInteresse"
+            android:id="@+id/btHistoricoCao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#CDC1FF"
             android:fontFamily="@font/montserrat_alternates"
-            android:text="Tenho Interesse"
+            android:text="Histórico"
             android:textColor="@color/black"
             android:textStyle="bold" />
     </LinearLayout>

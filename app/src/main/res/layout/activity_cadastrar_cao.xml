@@ -5,42 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastrarCaoActivity">
-
-    <LinearLayout
-        android:id="@+id/linearLayout11"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
-
-        <ImageButton
-            android:id="@+id/btCamera"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/design_default_color_on_primary"
-            app:srcCompat="@mipmap/camera" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="160dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
-
-        <ImageButton
-            android:id="@+id/btGaleria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/design_default_color_on_primary"
-            app:srcCompat="@mipmap/photo" />
-    </LinearLayout>
+    tools:context=".ActivityClass.CadastrarCaoActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout10"
@@ -55,10 +20,13 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@mipmap/user" />
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_shape"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/user" />
     </LinearLayout>
 
     <LinearLayout
@@ -136,11 +104,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/nomeCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Totó"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -155,11 +124,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout26">
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/corCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Caramelo, Preto, Branco"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -195,11 +165,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout28">
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/porteCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Pequeno, Médio, Grande"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -235,11 +206,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout30">
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/sexoCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Macho ou Fêmea"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -275,11 +247,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout32">
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/racaCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: SRD"
+            android:inputType="textCapSentences" />
     </LinearLayout>
 
     <LinearLayout
@@ -337,10 +310,30 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout46">
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/historicoCaoRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:hint="Ex: Todas as Informações do Cão"
+            android:inputType="textCapSentences" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="182dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <ImageButton
+            android:id="@+id/btGaleriaCao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_background"
+            app:srcCompat="@mipmap/photo" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

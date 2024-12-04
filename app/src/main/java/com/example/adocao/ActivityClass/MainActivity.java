@@ -1,4 +1,4 @@
-package com.example.adocao;
+package com.example.adocao.ActivityClass;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,24 +7,26 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CaoActivity extends AppCompatActivity {
+import com.example.adocao.R;
 
+public class MainActivity extends AppCompatActivity {
 
-    Button btInteresse;
+    Button btVamosLa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_cao);
+        setContentView(R.layout.activity_main);
 
-        btInteresse = findViewById(R.id.btInteresse);
-        btInteresse.setOnClickListener(new View.OnClickListener() {
+        btVamosLa = findViewById(R.id.btVamosLa);
+        btVamosLa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HistoricoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
